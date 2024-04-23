@@ -1,3 +1,9 @@
+import prisma from "@/utils/db";
+
+const prismaHandlers = async () => {
+
+};
+
 const PrismaExample = () => {
     return (
         <div>
