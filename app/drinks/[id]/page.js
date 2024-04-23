@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
+import drinkImg from './drink.jpg';
+console.log(drinkImg);
 
 const getSingleDrink = async (id) => {
     const res = await fetch(`${url}${id}`);
@@ -21,6 +24,10 @@ const SingleDrinkPage = async ({ params }) => {
                 Back to Drinks
             </Link>
             <h1 className='text-4xl mb-8'>{title}</h1>
+            {/* Static Image */}
+            {/* <Image src={drinkImg} className='w-48 h-48 rounded-lg' alt='drink' /> */}
+            {/* Remote image */}
+            <Image src={imgSrc} width={300} height={300} className='w-48 h-48 rounded-lg shadow-lg mb-4 ' priority alt={title} />
         </div>
     );
 };
