@@ -1,5 +1,17 @@
-'use Client';
+'use client';
+// import { createTask } from "@/utils/actions";
+import { createTask, createTaskCustom } from "@/utils/actions";
 import { useFormStatus } from 'react-dom';
+
+const SubmitBtn = () => {
+    const { pending } = useFormStatus();
+    return (
+        <button type="submit" className="btn btn-primary join-item" disabled={pending}>
+            {pending ? 'Please wait...' : 'Create Task'}
+        </button>
+    );
+};
+
 
 const TaskForm = () => {
     return (
