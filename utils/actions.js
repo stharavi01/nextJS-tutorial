@@ -35,9 +35,9 @@ export const createTaskCustom = async (prevState, formData) => {
             }
         });
         revalidatePath('/tasks');
-        return { message: 'Success' };
+        return { message: 'Success!' };
     } catch (error) {
-        return { message: 'Error' };
+        return { message: 'Error!' };
     }
 };
 
