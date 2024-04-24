@@ -25,7 +25,7 @@ const TaskList = async () => {
                     </h2>
                     <div className='flex gap-6 items-center'>
                         <Link href={`/tasks/${task.id}`} className='btn btn-accent btn-xs'>
-                            edit
+                            Edit
                         </Link>
                         <DeleteForm id={task.id} />
                     </div>
