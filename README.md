@@ -1235,7 +1235,7 @@ const TaskPage = async ({ params }) => {
 
   return (
     <>
-      <div className='mb-16'>
+      <div className='mb-8'>
         <Link href='/tasks' className='btn btn-accent'>
           Back to Tasks
         </Link>
